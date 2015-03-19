@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2613" started-at="2015-03-19T20:50:25Z" finished-at="2015-03-19T20:50:27Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2613" started-at="2015-03-19T20:50:25Z" finished-at="2015-03-19T20:50:27Z">
+      <class name="social.connector.test.FacebookConnectionTest">
+        <test-method status="PASS" signature="FacebookConnect()[pri:0, instance:social.connector.test.FacebookConnectionTest@5ef4f91d]" name="FacebookConnect" duration-ms="13" started-at="2015-03-19T15:50:25Z" finished-at="2015-03-19T15:50:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FacebookConnect -->
+        <test-method status="PASS" signature="testGetPosts()[pri:0, instance:social.connector.test.FacebookConnectionTest@5ef4f91d]" name="testGetPosts" duration-ms="2587" started-at="2015-03-19T15:50:25Z" finished-at="2015-03-19T15:50:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPosts -->
+      </class> <!-- social.connector.test.FacebookConnectionTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

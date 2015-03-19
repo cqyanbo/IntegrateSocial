@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="ConnectionTest" verbose="1" >
+  <test name="Regression1"   >
+    <packages>
+      <package name="social.connector.test" />
+   </packages>
+ </test>
+</suite>
