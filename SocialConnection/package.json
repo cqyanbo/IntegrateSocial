@@ -12,11 +12,13 @@
     "ejs": "~2.3.1",
     "express": "~4.12.2",
     "morgan": "~1.5.1",
+    "selenium-webdriver": "^2.45.0",
     "serve-favicon": "~2.2.0"
   },
   "devDependencies": {
     "chai": "^2.2.0",
     "grunt": "^0.4.5",
-    "mocha": "^2.2.4"
+    "mocha": "^2.2.4",
+    "selenium-webdriver": "^2.45.1"
   }
 }

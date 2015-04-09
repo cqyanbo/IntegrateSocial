@@ -1,14 +1,40 @@
 <!doctype html>
 	<html>
 	<head>
-		<title>Meadowlark Travel</title>
+		<title>Sunny Gallery</title>
+		<!--Begin of testing stuff-->
+		{{#if showTests}}
+			<link rel="stylesheet" href="/vendor/mocha.css">
+		{{/if}}
 		<script type="text/javascript">
 			document.oncontextmenu=new Function("return false")
 		</script>
+		<!--End of testing stuff-->
+		
+		<!-- CSS block -->
+		<link rel="stylesheet" href="/stylesheets/home.css">
+		<!-- End of CSS block -->
 	</head>
 	<body>
-		<span>This is a templated page</span>
-		<header><img src="/img/logo.png" alt="Meadowlark Travel Logo"></header>
 		{{{body}}}
+		{{#if showTests}}
+			<div id="mocha"></div>
+			<script src="/vendor/mocha.js"></script>
+			<script src="/vendor/chai.js"></script>
+			<script>
+				mocha.ui('tdd');
+				var assert = chai.assert;
+			</script>
+			<script src="/qa/tests-global.js"></script>
+			{{#if pageTestScript}}
+				<script src="{{pageTestScript}}"></script>
+			{{/if}}
+			<script>mocha.run();</script>
+		{{/if}}
+		
+		<!--Begin of JS-->
+		<script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.min.js"></script>
+		<script type="text/javascript" src="/javascript/home.js"/>
+		<!--End of JS-->
 	</body>
 </html>
