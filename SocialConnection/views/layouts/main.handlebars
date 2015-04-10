@@ -6,16 +6,19 @@
 		{{#if showTests}}
 			<link rel="stylesheet" href="/vendor/mocha.css">
 		{{/if}}
-		<script type="text/javascript">
-			document.oncontextmenu=new Function("return false")
-		</script>
 		<!--End of testing stuff-->
 		
 		<!-- CSS block -->
 		<link rel="stylesheet" href="/stylesheets/home.css">
 		<!-- End of CSS block -->
+		
+		<!--Begin of JS-->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+		<script type="text/javascript" src="/javascript/home.js"></script>
+		<!--End of JS-->
 	</head>
-	<body>
+	<body class="title_font, center_block">
 		{{{body}}}
 		{{#if showTests}}
 			<div id="mocha"></div>
@@ -31,10 +34,5 @@
 			{{/if}}
 			<script>mocha.run();</script>
 		{{/if}}
-		
-		<!--Begin of JS-->
-		<script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.min.js"></script>
-		<script type="text/javascript" src="/javascript/home.js"/>
-		<!--End of JS-->
 	</body>
 </html>

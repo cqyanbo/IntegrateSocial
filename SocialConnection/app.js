@@ -14,8 +14,10 @@ app.use(function(req, res, next){
 });
 
 app.set('view engine', 'handlebars');
-	app.get('/', function(req, res) {
-	res.render('home');
+
+
+app.get('/', function(req, res) {
+	res.render('login/home');
 });
 	
 	app.get('/about', function(req, res) {
