@@ -1,6 +1,27 @@
+// load log system
+var winston = require('winston');
+
+winston.log('info', 'Start Application!');
+
+//set up logger
+var logger = new (winston.Logger)({
+    transports: [
+      new (winston.transports.Console)(),
+      new (winston.transports.File)({ filename: './log.log' })
+    ]
+  });
+winston.info('Set up log file');
+
+//load express
 var express = require('express');
+winston.log('info', 'Express loaded.');
+
+
 var fortune = require('./lib/fortune/fortune.js');
+winston.log('info', 'fortune.js loaded.');
+
 var app = express();
+
 //set up handlebars view engine
 var handlebars = require('express3-handlebars')
 .create({ defaultLayout:'main' });
