@@ -17,8 +17,6 @@ exports.initial = function(express, app){
 			}
 		}
 	});
-	
-	Handlebars.registerPartial('login', './login/login');
 
 	// routings
 	var routings = require('./routes/routers.js');
